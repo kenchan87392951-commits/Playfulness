@@ -1,1 +1,169 @@
 # Playfulness
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playfulness v2 | Gamify Your Habits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        h1, h2, h3, .brand-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.5), 0 0 20px rgba(139, 92, 246, 0.3);
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="brand-font text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+                        Playfulness v2
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#features" class="hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
+                        <a href="#about" class="hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-all btn-glow">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-8">
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Gamify Your <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 neon-text">
+                        Daily Habits
+                    </span>
+                </h1>
+                <p class="text-lg text-gray-400 max-w-lg">
+                    Level up your life with Playfulness v2. Turn mundane tasks into epic quests. Track progress, earn rewards, and become the best version of yourself.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all btn-glow">
+                        Start Your Journey
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#" class="inline-flex justify-center items-center px-8 py-4 border border-gray-600 text-base font-medium rounded-lg text-gray-300 hover:bg-gray-800 transition-all">
+                        View Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-lg opacity-30 transform rotate-3"></div>
+                <div class="relative rounded-2xl overflow-hidden glass-card border border-gray-700 shadow-2xl transform transition-transform hover:-translate-y-2 duration-500">
+                    <img src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Anime Style Beauty generated by Nano Banana Pro" 
+                         class="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity">
+                    
+                    <div class="absolute bottom-4 left-4 right-4 p-4 glass-card rounded-xl border border-gray-600/50">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-green-400 to-blue-500 flex items-center justify-center">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-400">Daily Quest Completed</p>
+                                <p class="text-sm font-bold text-white">+500 XP Earned</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Why Playfulness v2?</h2>
+                <p class="text-gray-400">Whatever your goal, we make it fun.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:bg-gray-800 transition-colors group">
+                    <div class="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-gamepad text-purple-400 group-hover:text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Gamified System</h3>
+                    <p class="text-gray-400 text-sm">Turn habits into RPG stats. Strength, Intelligence, Charisma - build your real-life character.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:bg-gray-800 transition-colors group">
+                    <div class="w-12 h-12 bg-pink-900/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors">
+                        <i class="fas fa-chart-line text-pink-400 group-hover:text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Visual Progress</h3>
+                    <p class="text-gray-400 text-sm">Beautiful charts and streaks that make you want to keep going. Don't break the chain.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:bg-gray-800 transition-colors group">
+                    <div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-users text-blue-400 group-hover:text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Quests</h3>
+                    <p class="text-gray-400 text-sm">Compete with friends or join parties to tackle massive habit challenges together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900/20 pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-8">Ready to Level Up?</h2>
+            <p class="text-gray-300 mb-10 text-lg">Join thousands of players transforming their lives, one habit at a time.</p>
+            <button class="px-8 py-4 bg-white text-purple-900 font-bold rounded-full hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                Get Early Access
+            </button>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 py-12 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Playfulness v2. All rights reserved.</p>
+            <p class="mt-2">Designed for Ken-chan</p>
+        </div>
+    </footer>
+
+</body>
+</html>
